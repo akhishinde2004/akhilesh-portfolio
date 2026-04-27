@@ -107,6 +107,32 @@
   font-size: 15px;
 }
 
+.carousel-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.carousel-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #eae5ec;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.carousel-link:hover {
+  background: rgba(94, 234, 212, 0.15);
+  border-color: var(--accentColor);
+  color: var(--accentColor);
+}
+
 .carousel-image-wrapper {
   flex: 1;
   display: flex;

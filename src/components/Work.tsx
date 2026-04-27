@@ -2,37 +2,38 @@ import { useState, useCallback } from "react";
 import "./styles/Work.css";
 import WorkImage from "./WorkImage";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
+import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 const projects = [
   {
-    title: "Solid Starters",
-    category: "Low-Code Platform",
-    tools: "Angular, Next.js, NestJS, MongoDB",
-    image: "/images/Solidx.png",
+    title: "Soyabean Leaf Disease Detection",
+    category: "AI / Computer Vision",
+    tools: "Python, TensorFlow, YOLOv8, FastAPI, Streamlit",
+    image: "/images/soyabean.png",
   },
   {
-    title: "Radix",
-    category: "E-Commerce",
-    tools: "Angular, Next.js, NestJS, CMS",
-    image: "/images/radix.png",
+    title: "HireReady",
+    category: "AI Resume Screener",
+    tools: "Python, FastAPI, React, spaCy, NLP",
+    image: "/images/hireready.png",
+    liveUrl: "https://hireready-three-lemon.vercel.app",
+    githubUrl: "https://github.com/akhishinde2004/hireready",
   },
   {
-    title: "Bond Cancellation",
-    category: "Import-Export Automation",
-    tools: "Angular, Next.js, NestJS, Workflows",
-    image: "/images/bond.png",
+    title: "CampusCart",
+    category: "College Marketplace",
+    tools: "React, Node.js, Express, MongoDB, Cloudinary, JWT",
+    image: "/images/campuscart.png",
+    liveUrl: "https://campuscart-rouge.vercel.app",
+    githubUrl: "https://github.com/akhishinde2004/campuscart",
   },
   {
-    title: "Sapphire",
-    category: "CRM Platform",
-    tools: "AngularJS, NestJS, PostgreSQL",
-    image: "/images/sapphire.png",
-  },
-  {
-    title: "Mpro",
-    category: "Insurance Platform",
-    tools: "React.js, Node.js, Microservices",
-    image: "/images/Maxlife.png",
+    title: "DevPulse",
+    category: "Developer Activity Dashboard",
+    tools: "React, Node.js, MongoDB, GitHub API",
+    image: "/images/devpulse.png",
+    liveUrl: "https://dev-pulse-pied-one.vercel.app",
+    githubUrl: "https://github.com/akhishinde2004/DevPulse",
   },
 ];
 
@@ -111,6 +112,18 @@ const Work = () => {
                         <div className="carousel-tools">
                           <span className="tools-label">Tools & Features</span>
                           <p>{project.tools}</p>
+                        </div>
+                        <div className="carousel-links">
+                          {project.liveUrl && (
+                            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="carousel-link" data-cursor="pointer">
+                              <FiExternalLink /> Live Demo
+                            </a>
+                          )}
+                          {project.githubUrl && (
+                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="carousel-link" data-cursor="pointer">
+                              <FiGithub /> GitHub
+                            </a>
+                          )}
                         </div>
                       </div>
                     </div>

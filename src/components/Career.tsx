@@ -15,43 +15,37 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Full Stack Developer</h4>
-                <h5>Ikshan</h5>
+                <h4>Science & Mathematics</h4>
+                <h5>G.V.I.S.H, Amravati</h5>
               </div>
-              <h3>2020</h3>
+              <h3>2022</h3>
             </div>
             <p>
-              Built 6+ complete applications using React.js. Integrated backend
-              authentication using Node.js & MongoDB. Created responsive UI/UX
-              and designed wireframes using Figma.
+              Completed higher secondary with focus on Science & Mathematics, building the foundation for engineering.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Senior Full Stack Developer</h4>
-                <h5>Monocept (Max Life Insurance)</h5>
+                <h4>B.Tech in Computer Science</h4>
+                <h5>G H Raisoni College Of Engineering and Management, Nagpur</h5>
               </div>
-              <h3>2021</h3>
+              <h3>2026</h3>
             </div>
             <p>
-              Led two development teams on Mpro, a large-scale insurance
-              operations platform. Developed multiple modules using React.js &
-              migrated critical functionalities to Node.js microservices.
+              CGPA: 7.83 / 10.0 · No Active Backlogs. Four years of core CS — algorithms, systems, databases, and software engineering. Published research at IEEE CNC 2025.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Full Stack Developer</h4>
-                <h5>Logic Loop</h5>
+                <h4>Full-Stack Development Intern</h4>
+                <h5>AB Infotech Solutions Pvt. Ltd., Pune</h5>
               </div>
               <h3>NOW</h3>
             </div>
             <p>
-              Building Solid, a proprietary low-code platform using Angular,
-              Next.js & NestJS. Delivering production-ready CMS-based projects
-              including e-commerce, CRM, and import-export automation systems.
+              Built and optimized 15+ RESTful APIs using Java and Node.js, reducing response time by 20%. Engineered responsive React & Angular UIs, cutting load times by 25%. Deployed microservices for 5,000+ users at 99.9% uptime. Optimized PostgreSQL & MongoDB schemas to support 30% data growth.
             </p>
           </div>
         </div>

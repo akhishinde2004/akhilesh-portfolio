@@ -56,21 +56,22 @@
   font-size: 15px;
   line-height: 15px;
   font-weight: 600;
-  color: #5e5e5e;
+  color: #fff;
   cursor: pointer;
   transition: 0.5s;
   transform-origin: left bottom;
   transform: translateX(100%) rotateZ(-90deg);
 }
 .resume-button:hover {
-  color: #fff;
+  color: var(--accentColor);
 }
-div.resume-button span {
-  color: #fff;
+a.resume-button span {
+  color: inherit;
   font-size: 17px;
   margin-top: -1px;
   display: flex;
   align-items: center;
+  transition: 0.3s;
 }
 .check-line {
   position: fixed;
