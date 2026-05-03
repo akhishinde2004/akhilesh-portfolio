@@ -2,7 +2,10 @@
 
 Welcome to the source code of my personal developer portfolio! This project was built to go beyond a standard resume, acting as an interactive, AAA-game-inspired experience that showcases my skills in modern web development, 3D graphics, and UI/UX design.
 
-🌐 **Live Site:** `https://akhilesh-portfolio-three.vercel.app/`
+🌐 **Live Site:
+```bash
+https://akhilesh-portfolio-three.vercel.app/
+```
 
 ---
 
