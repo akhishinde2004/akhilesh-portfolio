@@ -68,7 +68,7 @@ To run this project on your local machine:
 ## 📫 Connect With Me
 
 - **GitHub:** [@akhishinde2004](https://github.com/akhishinde2004)
-- **LinkedIn:** [Akhilesh Shinde](https://linkedin.com/in/akhilesh-shinde)
+- **LinkedIn:** [Akhilesh Shinde](https://www.linkedin.com/in/akki01/)
 - **Email:** akhishinde04@gmail.com
 
 ---
