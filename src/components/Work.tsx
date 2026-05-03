@@ -6,14 +6,17 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 const projects = [
   {
-    title: "Soyabean Leaf Disease Detection",
+    title: "SoyVision",
     category: "AI / Computer Vision",
-    tools: "Python, TensorFlow, YOLOv8, FastAPI, Streamlit",
-    image: "/images/soyabean.png",
+    description: "AI-powered web app detecting Yellow Mosaic Virus in soyabean leaves with severity grading (0–3 scale). Trained on 1,147 real field images achieving 98% accuracy with results in under 3 seconds.",
+    tools: "Python, Flask, PyTorch, YOLOv8, CNN, SQLite",
+    image: "/images/SoyVision_cropped.png",
+    githubUrl: "https://github.com/akhishinde2004/SoyVision",
   },
   {
     title: "HireReady",
     category: "AI Resume Screener",
+    description: "NLP-driven resume screening system that matches candidates to job descriptions using semantic keyword analysis. Features real-time recruiter dashboard with scoring and ranking.",
     tools: "Python, FastAPI, React, spaCy, NLP",
     image: "/images/hireready.png",
     liveUrl: "https://hireready-three-lemon.vercel.app",
@@ -22,6 +25,7 @@ const projects = [
   {
     title: "CampusCart",
     category: "College Marketplace",
+    description: "Full-stack MERN marketplace for college students to buy and sell textbooks, electronics, and dorm items. Features real-time chat, JWT auth, and Cloudinary media handling.",
     tools: "React, Node.js, Express, MongoDB, Cloudinary, JWT",
     image: "/images/campuscart.png",
     liveUrl: "https://campuscart-rouge.vercel.app",
@@ -30,6 +34,7 @@ const projects = [
   {
     title: "DevPulse",
     category: "Developer Activity Dashboard",
+    description: "Real-time GitHub activity tracker that visualizes commits, PRs, and repository stats with interactive charts. Built for developers to monitor and showcase their coding activity.",
     tools: "React, Node.js, MongoDB, GitHub API",
     image: "/images/devpulse.png",
     liveUrl: "https://dev-pulse-pied-one.vercel.app",
@@ -109,8 +114,11 @@ const Work = () => {
                         <p className="carousel-category">
                           {project.category}
                         </p>
+                        <p className="carousel-description" style={{ fontSize: "14px", color: "#adacac", margin: "10px 0", lineHeight: "1.5" }}>
+                          {project.description}
+                        </p>
                         <div className="carousel-tools">
-                          <span className="tools-label">Tools & Features</span>
+                          <span className="tools-label">TECH STACK</span>
                           <p>{project.tools}</p>
                         </div>
                         <div className="carousel-links">

@@ -1,0 +1,177 @@
+.terminal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.terminal-window {
+  width: 800px;
+  max-width: 90vw;
+  height: 500px;
+  max-height: 80vh;
+  background: #0d0d0d;
+  border: 1px solid rgba(94, 234, 212, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(94, 234, 212, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.terminal-header {
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  border-bottom: 1px solid rgba(94, 234, 212, 0.2);
+}
+
+.terminal-title {
+  color: #888;
+  font-size: 14px;
+}
+
+.terminal-close {
+  background: transparent;
+  border: none;
+  color: #888;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.terminal-close:hover {
+  color: #ff5f56;
+}
+
+.terminal-body {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  color: #eae5ec;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Custom Scrollbar for Terminal */
+.terminal-body::-webkit-scrollbar {
+  width: 8px;
+}
+.terminal-body::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+.terminal-body::-webkit-scrollbar-thumb {
+  background: rgba(94, 234, 212, 0.3);
+  border-radius: 4px;
+}
+
+.term-user {
+  color: var(--accentColor); /* Cyan/Teal */
+  font-weight: bold;
+}
+
+.term-colon {
+  color: #fff;
+}
+
+.term-path {
+  color: #3b82f6; /* Blueish */
+  font-weight: bold;
+}
+
+.term-symbol {
+  color: #fff;
+  margin-right: 8px;
+}
+
+.term-highlight {
+  color: var(--accentColor);
+}
+
+.terminal-history-item {
+  margin-bottom: 10px;
+}
+
+.terminal-output {
+  margin-top: 4px;
+  margin-bottom: 15px;
+  white-space: pre-wrap;
+  color: #adacac;
+}
+
+.terminal-input-line {
+  display: flex;
+  align-items: center;
+}
+
+.terminal-input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  width: 100%;
+  outline: none;
+  caret-color: var(--accentColor);
+}
+
+/* Floating Toggle Button */
+.terminal-toggle-btn {
+  position: fixed;
+  bottom: 30px;
+  left: 80px;
+  width: 60px;
+  height: 60px;
+  background: #0d0d0d;
+  border: 1px solid rgba(94, 234, 212, 0.3);
+  border-radius: 50%;
+  color: var(--accentColor);
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 0 15px rgba(94, 234, 212, 0.15);
+  transition: all 0.3s ease;
+}
+
+.terminal-toggle-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(94, 234, 212, 0.3);
+  background: rgba(94, 234, 212, 0.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+  .terminal-window {
+    width: 95vw;
+    height: 90vh;
+  }
+  .terminal-toggle-btn {
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
