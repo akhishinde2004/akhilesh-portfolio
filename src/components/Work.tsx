@@ -122,11 +122,11 @@ const Work = () => {
                           <p>{project.tools}</p>
                         </div>
                         <div className="carousel-links">
-                          {project.liveUrl && (
+                          {/* {project.liveUrl && (
                             <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="carousel-link" data-cursor="pointer">
                               <FiExternalLink /> Live Demo
                             </a>
-                          )}
+                          )} */}
                           {project.githubUrl && (
                             <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="carousel-link" data-cursor="pointer">
                               <FiGithub /> GitHub
