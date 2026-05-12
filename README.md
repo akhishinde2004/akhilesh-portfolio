@@ -2,7 +2,10 @@
 
 Welcome to the source code of my personal developer portfolio! This project was built to go beyond a standard resume, acting as an interactive, AAA-game-inspired experience that showcases my skills in modern web development, 3D graphics, and UI/UX design.
 
-🌐 **Live Site:** [akhileshshinde.vercel.app](https://akhilesh-portfolio.vercel.app/) *(Update with your actual URL)*
+🌐 **Live Site:**
+```bash
+https://akhilesh-portfolio-three.vercel.app/
+```
 
 ---
 
@@ -65,7 +68,7 @@ To run this project on your local machine:
 ## 📫 Connect With Me
 
 - **GitHub:** [@akhishinde2004](https://github.com/akhishinde2004)
-- **LinkedIn:** [Akhilesh Shinde](https://linkedin.com/in/akhilesh-shinde)
+- **LinkedIn:** [Akhilesh Shinde](https://www.linkedin.com/in/akki01/)
 - **Email:** akhishinde04@gmail.com
 
 ---
